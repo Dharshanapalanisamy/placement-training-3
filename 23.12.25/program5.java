@@ -1,0 +1,7 @@
+mport heap
+arr = list(map(int, input().split()))
+k = int(input())
+heapq.heapify(arr)
+for _ in range(len(arr) - k):
+    heapq.heappop(arr)
+print(arr[0])
